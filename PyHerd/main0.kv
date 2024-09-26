@@ -17,9 +17,6 @@ WindowManager:
         Button:
             id: ba1
             text:"Send MSG"
-            on_release:
-                app.root.current = "second"
-                root.manager.transition.direction = "right"
 
 <SecondWindow>:
     name:"second"
@@ -32,6 +29,3 @@ WindowManager:
         Button:
             id: bb1
             text:"Back"
-            on_release:
-                app.root.current = "first"
-                root.manager.transition.direction = "left"
